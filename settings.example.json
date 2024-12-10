@@ -1,0 +1,10 @@
+{
+  "public": {
+    "useRateLimits": true,
+    "environment": "staging"
+  },
+  "monti": {
+    "appId": null,
+    "appSecret": null
+  }
+}
