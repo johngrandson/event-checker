@@ -26,6 +26,12 @@
     "paths": {
       /* Support absolute /imports/* with a leading '/' */
       "/*": ["*"],
+      "features/*": ["imports/features/*"],
+      "features/communities/*": ["imports/features/communities/*"],
+      "features/people/*": ["imports/features/people/*"],
+      "ui/*": ["components/ui/*"],
+      "utils/*": ["imports/lib/utils"],
+
       /* Pull in type declarations for Meteor packages from either zodern:types or @types/meteor packages */
       "meteor/*": [
         "node_modules/@types/meteor/*",
@@ -38,5 +44,12 @@
     "esModuleInterop": true,
     "preserveSymlinks": true
   },
+  "include": [
+    "client/**/*",
+    "server/**/*",
+    "components/**/*",
+    "features/**/*",
+    "imports/**/*"
+  ],
   "exclude": ["./.meteor/**", "./packages/**"]
 }
