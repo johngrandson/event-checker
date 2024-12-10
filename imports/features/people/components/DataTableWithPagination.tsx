@@ -78,7 +78,6 @@ export function DataTableWithPagination<TData, TValue>({
       <div className="flex w-full items-center py-4">
         <Input
           placeholder="Filter by name..."
-          disabled={table.getRowModel().rows?.length === 0}
           value={
             (table.getColumn('firstName')?.getFilterValue() as string) ?? ''
           }
